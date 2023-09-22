@@ -8,9 +8,10 @@ The code is written mainly in Python, with SQL used inside the code.
 
 There are two parts: the client side program, and the server side program. Chats were designed to allow multiple users to send and receive messages. When a message is sent, it is stored on the server database. All client side programs routinely check for new messages, and pull them from the server if so.
 
-This project deepened my knowledge of SQL, and introduced me to sockets, salting inputs, and sending and receiving data over the internet.
+This project deepened my knowledge of SQL, and introduced me to sockets, salting passwords, tkinter, and sending and receiving data over the internet.
 
 Due to the pandemic, the project was never finished. As such, the chats are not encrypted. An idea to use SSH was unimplemented, and more complex features like file sharing, images etc. are unimplemented. 
 
-As the code stands, it is a mess; packaging it all into a single class was a bad idea. The server must be set manually, and the code can break easily.
+As the code stands, it is a mess; packaging it all into a single class was a bad idea. The server must be set manually, and the code can break easily. There is no sanitation of inputs, so a user could insert SQL into an input and break the server, or access personal information.
+
 If in future a similar project is to be attempted, a more thorough, though out structure should be used.
